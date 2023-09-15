@@ -8,12 +8,15 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .sidebar {
     background-color: #0ea5e9;
     grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .header {
@@ -26,6 +29,43 @@ body {
     grid-row: 2 / 3;
 }
 
+.logo {
+    padding: 16px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 4px;
+}
+
+.logo img {
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
 .logo h1 {
-    font-family: 'Original Surfer';
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    align-self: center;
+    padding-right: 16px;
+}
+
+.sidebar-item {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 4px;
+}
+
+.sidebar-item img {
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+.sidebar-item h2 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    align-self: center;
 }
