@@ -211,6 +211,19 @@ body {
     justify-self: end;
 }
 
+.project .project-buttons button,
+.project .project-buttons a {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.project .project-buttons button:hover,
+.project .project-buttons a:hover {
+    transform: scale(1.2);
+}
+
 .project .project-buttons img {
     width: 25px;
 }
