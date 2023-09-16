@@ -13,7 +13,7 @@ body {
 }
 
 .sidebar {
-    background-color: #0ea5e9;
+    background-color: #22c55e;
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
@@ -104,6 +104,8 @@ body {
     height: 32px;
     max-width: 1100px;
     flex: 1;
+    padding: 0 8px 0 16px;
+    font-size: 1.1rem;
 }
 
 .profile {
@@ -116,7 +118,7 @@ body {
     height: 30px;
 }
 .profile .pfp-small {
-    height: 40px;
+    width: 60px;
     clip-path: circle();
 }
 
@@ -149,11 +151,16 @@ body {
     border: 0px;
     border-radius: 24px;
     padding: 12px 24px;
-    background-color: #0ea5e9;
+    background-color: #22c55e;
     color: white;
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
+}
+
+.bottom-header button:active {
+    background-color: #16a34a;
+    transform: scale(1.05);
 }
 
 .left-content h2 {
@@ -171,7 +178,7 @@ body {
     padding: 32px 16px;
     border-radius: 10px;
     height: 250px;
-    border-left: 10px solid orange;
+    border-left: 10px solid #059669;
     box-shadow:  1px 3px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -182,10 +189,12 @@ body {
 
 .project h3 {
     margin-bottom: 8px;
+    font-size: 1.25rem;
 }
 
 .project p {
     color: #737373;
+    font-size: 1.1rem;
     margin-bottom: 16px;
 }
 
@@ -231,8 +240,28 @@ body {
 
 .announcement p {
     color: #737373;
+    font-size: 0.9rem;
+}
+
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.trending-person {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .trending-person img {
-    width: 50px;
+    width: 60px;
+    clip-path: circle();
+}
+
+.trending-person .description {
+    margin-top: 4px;
+    color: #737373;
 }
