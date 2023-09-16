@@ -170,6 +170,7 @@ body {
     background-color: white;
     padding: 16px;
     border-radius: 10px;
+    border-left: 10px solid orange;
     box-shadow:  1px 3px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
