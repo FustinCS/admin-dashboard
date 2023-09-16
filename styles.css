@@ -185,6 +185,11 @@ body {
 .project {
     display: grid;
     grid-template-rows: auto auto 1fr;
+    transition: all 0.1s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
 
 .project h3 {
